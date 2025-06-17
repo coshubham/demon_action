@@ -9,7 +9,7 @@ on:
                      - main
                      - test
                      - master
-       workflow_dispatch:  # for manual triggering
+       workflow_dispatch:  # add manual triggering
 
 jobs:
        on-push:
