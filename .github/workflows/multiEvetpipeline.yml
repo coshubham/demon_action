@@ -4,6 +4,11 @@ on:
               branches:
                      - main
                      - test
+       pull_request:
+              branches:
+                     - main
+                     - test
+                     - master
 
 jobs:
        on-push:
@@ -11,3 +16,9 @@ jobs:
               steps:
                      - name: "Running on main and test push"
                        run: echo "Running on main and test push"
+
+       on-pull-request:
+              runs-on: ubntu-latest
+              steps:
+                     - name: "Running on main and test pull request"
+                       run: echo "Running on main and test pull request"
