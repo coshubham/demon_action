@@ -18,7 +18,7 @@ jobs:
                        run: echo "Running on main and test push"
 
        on-pull-request:
-              runs-on: ubntu-latest
+              runs-on: ubuntu-latest
               steps:
                      - name: "Running on main and test pull request"
                        run: echo "Running on main and test pull request"
